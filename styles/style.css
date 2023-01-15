@@ -274,29 +274,50 @@ p.fact-desc {
   .main-nav {
     flex-direction: column;
   }
+  .nav-container {
+    padding-bottom: 40px;
+  }
   .nav-logo h1 {
     margin-bottom: 30px;
   }
   .banner-title {
     font-size: 3rem;
   }
+  .banner-desc {
+    padding: 0 26px;
+  }
   .feature {
-    padding: 80px 0;
+    padding: 53px 0;
+    padding-bottom: 0px;
+  }
+  .feature-details {
+    text-align: center;
   }
 
   .feature-photos {
     grid-template-columns: repeat(1, 1fr);
   }
+  .feature-enjoy,
+  .facts,.sponsors {
+    padding-bottom: 88px;
+  }
   .enjoy-container {
     padding: 20px;
+    gap: 21px;
   }
   .enjoy-details,
   .architect-photo {
     width: 100%;
   }
+  .fact-info {
+    padding: 0 36px;
+  }
+  p.fact-desc {
+    margin-bottom: 33px;
+  }
   .award:hover {
-  transform: scale(1.1);
-}
+    transform: scale(1.1);
+  }
   button.exp-btn {
     left: 18%;
     bottom: -114px;
@@ -309,6 +330,6 @@ p.fact-desc {
     gap: 21px;
   }
   .sponsors-logos {
-    gap: 31px;
+    gap: 57px;
   }
 }
