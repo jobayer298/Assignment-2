@@ -177,7 +177,7 @@ button.exp-btn {
 }
 /* fact section */
 .facts {
-  padding-bottom: 160px;
+  padding-bottom: 85px;
 }
 .fact-info {
   text-align: center;
@@ -228,11 +228,49 @@ p.fact-desc {
   font-size: 1.25rem;
   color: #727272;
 }
+/* team member */
+section.team {
+  padding-bottom: 79px;
+}
+.container.team-container {
+  text-align: center;
+  overflow: hidden;
+}
+h1.team-title {
+  margin-bottom: 45px;
+}
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.member > img {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+.member > img:hover {
+  transform: scale(1.07);
+}
+.member {
+  border: 1px solid #7976763a;
+  overflow: hidden;
+}
+.member-info {
+  padding: 16px 0;
+}
+
+.member-info > p {
+  font-size: 1rem;
+  font-weight: 600;
+}
 /* sponsors style */
 .sponsors {
   padding-bottom: 120px;
 }
-.sponsors-title {
+.sponsors-title,
+.team-title {
   color: #131313;
   font-size: 2.8rem;
   margin-bottom: 20px;
@@ -294,11 +332,13 @@ p.fact-desc {
     text-align: center;
   }
 
-  .feature-photos {
+  .feature-photos,
+  .members {
     grid-template-columns: repeat(1, 1fr);
   }
   .feature-enjoy,
-  .facts,.sponsors {
+  .facts,
+  .sponsors {
     padding-bottom: 88px;
   }
   .enjoy-container {
@@ -328,6 +368,9 @@ p.fact-desc {
   .awards {
     padding: 0 30px;
     gap: 21px;
+  }
+  .members {
+    padding: 0 35px;
   }
   .sponsors-logos {
     gap: 57px;
